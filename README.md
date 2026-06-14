@@ -7,7 +7,7 @@ This repository documents my journey learning C++.
 
 - Learn object-oriented programming.
 
-- Build the necessary foundation for embedded systems and AtlasForge projects.
+- Build the necessary foundation for embedded systems and engineering/robotics projects.
 
 ## Content
 
