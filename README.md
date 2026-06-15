@@ -11,14 +11,8 @@ This repository documents my journey learning C++.
 
 ## Content
 
-- Basics
-- Loops and conditionals
-- Functions
-- Vectors
-- Structs
-- Classes
-- File manipulation
-- Mini-projects
+06/15/2026 (June 15th, 2026) 
+- After completing an introductory C++ course, I will delve deeper into libraries.
 
 ## What I've learned so far
 - ...
