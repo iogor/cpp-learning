@@ -11,8 +11,8 @@ This repository documents my journey learning C++.
 
 ## Content
 
-06/15/2026 (June 15th, 2026) 
-- After completing an introductory C++ course, I will delve deeper into libraries.
+06/15/2026 (June fifteenth, twenty twenty-six):
+- After completing a four-hour introductory C++ course, I will delve deeper into libraries.
 
 ## What I've learned so far
 - ...
