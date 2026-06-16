@@ -1,1 +1,246 @@
+-push_front:
+this is a function is used to add elements At the start of the list
+exemple:
 
+---------------------------------------------------------------
+#include <iostream>
+#include <list>
+
+int main() {
+    std::list<int> myList;
+
+    // Adding elements to the front of the list
+    myList.push_front(10);
+    myList.push_front(20);
+    myList.push_front(30);
+
+    // Printing the list
+    for (int num : myList) {
+        std::cout << num << " ";
+    }
+    return 0;
+}
+---------------------------------------------------------------
+
+-push_back:
+this is the same thing as "push_front", but "push_back" adds elements to the back of the list
+exemple:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <list>
+
+int main() {
+    std::list<int> myList;
+
+    myList.push_back(10);
+    myList.push_back(20);
+    myList.push_back(30);
+
+    for (int num : myList) {
+        std::cout << num << " ";
+    }
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-pop_front:
+this function is used to Removes the first element from the deque
+exemple:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Removing element from the front
+    myDeque.pop_front(); // Removes 10
+
+    // Printing the deque
+    for (int num : myDeque) {
+        std::cout << num << " ";
+    }
+    return 0;
+}
+---------------------------------------------------------------
+
+-pop_back:
+this function is used to Removes the last element from the deque.
+exemple:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+int main() {
+    std::deque<int> myDeque;
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Removing element from the back
+    myDeque.pop_back(); // Removes 30
+
+    // Printing the deque
+    for (int num : myDeque) {
+    std::cout << num << " ";
+    }
+    return 0;
+}
+    ---------------------------------------------------------------
+
+-size:
+this function is used to return the number of elements in the container.
+
+example:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Printing the number of elements
+    std::cout << myDeque.size();
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-empty:
+this function is used to check if the container is empty.
+
+if the container has no elements, it returns true.
+otherwise, it returns false.
+
+example:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Checking if the deque is empty
+    if (myDeque.empty()) {
+        std::cout << "The deque is empty";
+    } else {
+        std::cout << "The deque is not empty";
+    }
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-front:
+this function is used to access the first element of the deque.
+
+it does not remove the element.
+it only returns the element at the front.
+
+example:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Accessing the first element
+    std::cout << myDeque.front();
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-back:
+this function is used to access the last element of the deque.
+
+it does not remove the element.
+it only returns the element at the back.
+
+example:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Accessing the last element
+    std::cout << myDeque.back();
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-clear:
+this function is used to remove all elements from the deque.
+
+after using this function, the deque becomes empty.
+
+example:
+
+---------------------------------------------------------------
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> myDeque;
+
+    // Adding elements
+    myDeque.push_back(10);
+    myDeque.push_back(20);
+    myDeque.push_back(30);
+
+    // Removing all elements
+    myDeque.clear();
+
+    // Printing the number of elements
+    std::cout << myDeque.size();
+
+    return 0;
+}
+---------------------------------------------------------------
+
+-note:
+
+push_front()  -> adds an element at the beginning.
+push_back()   -> adds an element at the end.
+
+pop_front()   -> removes the first element.
+pop_back()    -> removes the last element.
+
+front()       -> accesses the first element.
+back()        -> accesses the last element.
+
+size()        -> returns how many elements exist.
+empty()       -> checks whether the container has elements.
+clear()       -> removes all elements.
