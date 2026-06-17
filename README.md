@@ -15,4 +15,7 @@ This repository documents my journey learning C++.
 - After completing a four-hour introductory C++ course, I will delve deeper into libraries.
 
 ## What I've learned so far
+
+What I've learned so far is in my notebook, but I will soon post a complete transcript of it.
+
 - ...
