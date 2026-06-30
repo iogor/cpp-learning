@@ -1,0 +1,26 @@
+#01 Variables
+
+vatiables are memory spaces allocated to store an element; among the variable types, the main ones are:
+- strings
+- integers
+- floats
+- chars
+- doubles
+- booleans.
+
+## example:
+
+"#include <iostream>
+
+int main()
+{
+  int age = 1;
+  
+  return 0;
+}
+
+#02 inputs and outputs
+
+Inputs occur when the user has to interact with the code by entering information so that the code runs normally.
+
+Outputs are pieces of information that appear on the screen.
