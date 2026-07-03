@@ -1,0 +1,57 @@
+https://github.com/iogor/cpp-learning/blob/5c386fcb0fc6a476be40f6c58d96bbb89334f49f/assets/Captura%20de%20tela%202026-07-03%20162228.png
+https://github.com/iogor/cpp-learning/blob/5c386fcb0fc6a476be40f6c58d96bbb89334f49f/assets/Captura%20de%20tela%202026-07-03%20162234.png
+
+solution to the problem:
+
+´´´´
+#include <iostream>
+using namespace std;
+
+void ovenTime() { 
+    cout << "to cook a lasagna, it takes 40 min\n"; 
+}
+
+int remainingOvenTime(int actualMinutesInOven) {
+    int x = actualMinutesInOven;
+    int y;
+    if (x < 40) {
+        y = 40 - actualMinutesInOven;
+    } else {
+        y = 0;
+    }
+    return y;
+}
+
+int preparationTime(int numberOfLayers) {
+    int b;
+    int m;
+    b = numberOfLayers;
+    m = b * 2;
+    return m;
+}
+
+int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
+    int k;
+    int h;
+    k = numberOfLayers * 2;
+    h = actualMinutesInOven + k;
+    return h;
+}
+
+int main() {
+    int i;
+    cout << "how long has the lasagna been in the oven?\n";
+    cin >> i;
+
+    int f;
+    cout << "how many layers did you add?\n";
+    cin >> f;
+
+    ovenTime();
+
+    cout << "remaining: " << remainingOvenTime(i) << " to finish cooking the lasagna.\n";
+    cout << "to add the layers it took " << preparationTime(f) << " min\n";
+    cout << "it took: " << elapsedTime(f, i) << " min to cook\n";
+
+    return 0;
+}
